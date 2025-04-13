@@ -1,7 +1,6 @@
+#pragma once
 #ifndef STACK_H
 #define STACK_H
-#include <iostream>
-using namespace std;
 
 template <class KeyType>
 class Stack {
@@ -11,15 +10,13 @@ private:
 	int top;
 
 public:
-	static const int DefaultSize = 100;
-
-	Stack(int MaxStackSize = DefaultSize);
+	Stack(int MaxStackSize = 100);
 	~Stack();
 
 	bool IsFull();
 	bool IsEmpty();
-	void Push(KeyType& item);
-	KeyType* Pop(KeyType&);
+	void Push(const KeyType& item);
+	KeyType* Pop(KeyType& x);
 };
 
 #include "stack.cpp"
