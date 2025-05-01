@@ -19,5 +19,8 @@ int main() {
 	p3.AddPoly(p1, p2);
 	p3.Print();
 
+	p3.MultiPoly(p1, p2);
+	p3.Print();
+
 	return 0;
 }
