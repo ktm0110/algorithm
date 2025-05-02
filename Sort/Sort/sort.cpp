@@ -30,6 +30,14 @@ void BubbleSort(int* A) {
 	}
 }
 
+void Merge(int* A, int p, int q, int r) {
+	int n1 = q - p + 1;
+	int n2 = r - q;
+	for (int i = 0; i < n1; i++) {
+
+	}
+}
+
 void MergeSort(int* A) {
 
 }
