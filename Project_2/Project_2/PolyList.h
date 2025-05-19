@@ -4,9 +4,9 @@ using namespace std;
 
 struct NODE
 {
-	int coef;
-	int expo;
-	NODE* link;
+	int coef;	// 계수
+	int expo;	// 지수
+	NODE* link;	// 다음 노드 포인터
 };
 
 class CPolyList {
